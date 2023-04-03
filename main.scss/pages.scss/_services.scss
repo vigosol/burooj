@@ -1,0 +1,187 @@
+.heroServices {
+    .heroFlag {
+        padding: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/ktvdroneflag.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $black;
+            opacity: 0.4;
+        }
+
+        .titleText {
+            position: relative;
+            z-index: 5;
+
+            h2 {
+                font-size: $font62;
+                color: $white;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: $font42;
+                text-transform: uppercase;
+                color: $white;
+                line-height: 52px;
+            }
+        }
+    }
+
+    .text-box {
+        padding: 100px;
+        background: $dark_gray;
+
+        p {
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.method {
+    background: $primary;
+    color: $white;
+    padding: 240px 0 100px 0;
+
+    ol {
+        li {
+            margin-bottom: 20px;
+        }
+    }
+
+    .text-box {
+        h3 {
+            color: $white;
+        }
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        color: $white;
+        line-height: 1.4;
+        margin-bottom: 0.9rem;
+    }
+
+    p {
+        color: $white;
+        margin-bottom: 0.9rem;
+    }
+}
+
+.solarPanel {
+    position: relative;
+
+    .shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        fill: $primary;
+        z-index: 555;
+        width: 100%;
+        height: 60px;
+    }
+
+    .solarBox {
+        padding: 100px;
+        height: 100%;
+        background-image: url(../images/solarpanelcleaning_ktv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 1;
+
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $black;
+            opacity: 0.4;
+        }
+
+        .text-box {
+            position: relative;
+            z-index: 5;
+
+            h3 {
+                color: $white;
+                text-align: right;
+            }
+        }
+    }
+
+    .caption {
+        padding: 100px;
+        height: 100%;
+        min-height: 800px;
+        background: $blue;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 5;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.standardSolar {
+    background: $primary;
+    padding: 240px 0px 100px 0px;
+
+    .text-box {
+
+        p,
+        h3 {
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.safetyStand {
+    padding: 240px 0px 100px 0px;
+    background: $blue;
+
+    .text-box {
+        ul {
+            padding-left: 20px;
+
+            li {
+                list-style-type: disc;
+                color: $white;
+                font-size: 1rem;
+                @include Red_Hat_Display(400)
+            }
+        }
+
+        p,
+        h3 {
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.banner-sec {
+    position: relative;
+    margin: 0 0 -5px 0;
+    .banner-inner {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        margin: 0 auto;
+        transform: translate(-50%, 0);
+        max-width: 1390px;
+        padding: 120px 0 0 0;
+        .banner-form {
+            background-color: rgba($primary, 0.93);
+            padding: 57px;
+            max-width: 475px;
+            width: 100%;
+            @include border_radius (16px 80px 16px 80px);
+            .text-box {
+                margin: 0 0 35px 0;
+                h3 {
+                    color: $white;
+                    font-size: $font28;
+                    text-transform: uppercase;
+                    line-height: 32px;
+                    @include Al_Qabas(bold);
+                    margin: 0 0 24px 0;
+                }
+                p {
+                    color: $white;
+                    font-size: $font13;
+                    line-height: 15px;
+                    margin-bottom: 14.4px;
+                    @include Red_Hat_Display(600);
+                }
+            }
+            form {
+                .form-group {
+                    margin-bottom: 10px;
+                    .form-control {
+                        @include border_radius(0);
+                        background-color: $white;
+                        box-shadow: none;
+                        height: 40px;
+                        font-size: $font12;
+                        @include Red_Hat_Display(400);
+                        text-transform: uppercase;
+                        border: none;
+                        &:focus {
+                            border-color: transparent;
+                        }
+                    }
+                    textarea {
+                        &.form-control {
+                            height: 106px;
+                            resize: none;
+                        }
+                        &.info-field {
+                            height: 58px;
+                        }
+                    }
+                    .btn-default {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        height: 40px;
+                        max-width: 237px;
+                        width: 100%;
+                        color: #fff;
+                        text-transform: uppercase;
+                        @include Al_Qabas(bold);
+                        letter-spacing: 0.5px;
+                        background-color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}

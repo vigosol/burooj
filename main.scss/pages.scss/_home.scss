@@ -1,0 +1,791 @@
+h3 {
+    color: $mainly_blue;
+    font-size: $font62;
+    text-transform: uppercase;
+    line-height: 68px;
+    @include Red_Hat_Display(900);
+}
+
+p {
+    font-size: $font16;
+    line-height: 24px;
+    @include Red_Hat_Display(400);
+    color: $charcoal;
+}
+
+
+/****** SERVICES SEC ******/
+
+.servics-sec {
+    background-color: rgba($secondary, 0.1);
+    padding: 158px 0 152px;
+}
+
+.servics-inner {
+    margin: 34px 0 0 0;
+
+    .text-box {
+        h3 {
+            font-size: $font26;
+            line-height: 1;
+        }
+
+        p {
+            color: $dark_gray;
+            margin: 24px 0 35px 0;
+            max-width: 540px;
+            width: 100%;
+        }
+    }
+}
+
+.title {
+    text-align: left;
+
+    h2 {
+        color: $dark_gray;
+        font-size: $font62;
+        text-transform: uppercase;
+        line-height: 1;
+        @include Al_Qabas(bold);
+        margin: 0 0 25px 0;
+    }
+
+    p {
+        color: $dark_gray;
+        font-size: $font42;
+        text-transform: uppercase;
+        line-height: 52px;
+        @include Red_Hat_Display(400)
+    }
+}
+
+.shape-bottom {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    transform: rotateX(180deg);
+
+    svg {
+        height: 42px;
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/****** VACANT PILOT SEC ******/
+
+.vacant-pilot-sec {
+    background-color: $primary;
+    padding: 66px 0;
+    position: relative;
+
+    .text-box {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+
+            h4 {
+                color: $white;
+                @include Red_Hat_Display(700);
+                font-size: $font40;
+                text-transform: uppercase;
+                margin-left: 16px;
+
+                span {
+                    @include Red_Hat_Display(400);
+                }
+            }
+        }
+    }
+}
+
+.vacant-shape {
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    svg {
+        height: 42px;
+        width: 100%;
+        display: block;
+    }
+
+    &.vacant-shape2 {
+        bottom: -60px;
+
+        svg {
+            height: 60px;
+        }
+    }
+}
+
+
+/***** ARRIVED DRONE *****/
+
+.arrived-drone-sec {
+    background-color: $secondary;
+
+    .image-holder {
+        position: relative;
+        height: 800px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, 0.4);
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h4 {
+            @include Red_Hat_Display(700);
+            font-size: $font62;
+            text-align: right;
+            text-transform: uppercase;
+            line-height: 68px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            color: $white;
+            right: 0;
+            width: 100%;
+            padding: 100px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            z-index: 10;
+        }
+    }
+
+    .text-box {
+        padding: 140px 140px 140px 140px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h4 {
+            font-size: $font42;
+            color: $white;
+            text-transform: uppercase;
+            line-height: 52px;
+            @include Red_Hat_Display(600);
+        }
+
+        p {
+            color: $white;
+            margin: 30px 0 34px;
+        }
+    }
+}
+
+
+/***** ADVANTAGE DRONE *****/
+
+.advantage-sec {
+    background-color: rgba($secondary, 0.1);
+    padding: 130px 0;
+
+    .text-box {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        h3 {
+            max-width: 432px;
+        }
+    }
+
+    .text-list {
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                margin: 0 0 24px 0;
+                margin: 0 0 24px 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                span {
+                    max-width: 46px;
+                    width: 100%;
+                    margin: 0 16px 0 0px;
+                }
+
+                p {
+                    flex: 1;
+                    @include Red_Hat_Display(600);
+                    font-size: $font20;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+/***** SOLAR SELL SEC ******/
+
+.solar-cell-sec {
+    background-color: $blue;
+    position: relative;
+
+    .image-holder {
+        &::after {
+            background-color: rgba($black, 0.2);
+        }
+    }
+
+    .text-box {
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .vacant-shape {
+        bottom: auto;
+        top: 0;
+
+        svg {
+            height: 60px;
+        }
+    }
+}
+
+
+/***** LET TALK AEC ******/
+
+.let-talk-sec {
+    background: url(../images/map_grey.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding: 340px 0 290px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($orange, 0.88);
+    }
+
+    .let-talk-left {
+        position: relative;
+        z-index: 10;
+
+        h4 {
+            color: $white;
+            font-size: $font62;
+            text-transform: uppercase;
+            line-height: 68px;
+            @include Red_Hat_Display(900);
+            margin: 0 0 24px 0;
+        }
+
+        p {
+            color: $white;
+            font-size: $font42;
+            text-transform: uppercase;
+            line-height: 52px;
+            @include Red_Hat_Display(400);
+        }
+    }
+
+    .let-talk-right {
+        position: relative;
+        z-index: 10;
+
+        p {
+            color: $white;
+            @include Red_Hat_Display(500);
+            font-size: $font20;
+            margin: 0 0 36px 0;
+            line-height: 24px;
+        }
+    }
+}
+
+
+/***** INTENTION SEC ******/
+
+.intention-sec {
+    padding: 220px 0 226px;
+    background-color: $primary;
+
+    .intention-left {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            color: $white;
+        }
+    }
+
+    .intention-right {
+        padding: 0 0 0 31px;
+
+        h4 {
+            color: $white;
+            font-size: $font20;
+            line-height: 24px;
+            @include Red_Hat_Display(700);
+            margin: 0 0 20px 0;
+        }
+
+        p {
+            color: $white;
+            margin: 0 0 16px 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+/******** ABOUT US *****/
+
+.about-us-sec {
+    .about-us-left {
+        padding: 120px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h4 {
+            color: $gray;
+            @include Red_Hat_Display(400);
+            font-size: $font42;
+            text-transform: uppercase;
+            line-height: 52px;
+        }
+
+        p {
+            color: $gray;
+            text-transform: uppercase;
+            line-height: 24px;
+            margin: 24px 0 32px;
+        }
+    }
+
+    .about-us-right {
+        background: url(../images/about-img.jpg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        object-fit: cover;
+        padding: 100px;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, 0.4);
+        }
+
+        .text-box {
+            position: relative;
+            z-index: 10;
+
+            h3 {
+                color: $white;
+                margin: 0 0 26px 0;
+            }
+
+            h4 {
+                color: $white;
+                @include Red_Hat_Display(700);
+                font-size: $font42;
+                text-transform: uppercase;
+                line-height: 52px;
+            }
+        }
+    }
+}
+
+
+/***** ESTIMATES FUTURE SEC ******/
+
+.estimated-future-sec {
+    background-color: $secondary;
+    padding: 228px 0;
+    position: relative;
+
+    .estimated-future-left {
+        padding: 0 15px;
+
+        p {
+            color: $white;
+            @include Red_Hat_Display(400);
+            font-size: $font42;
+            text-transform: uppercase;
+            line-height: 52px;
+            max-width: 730px;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    .estimated-future-right {
+        text-align: center;
+        height: 100%;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            @include Red_Hat_Display(800);
+            font-size: $font41;
+            line-height: 40px;
+        }
+    }
+
+    .vacant-shape {
+        bottom: -70px;
+
+        SVG {
+            height: 70px;
+        }
+    }
+}
+
+
+/***** GLOBAL REACH SEC *****/
+
+.global-reach-sec {
+    padding: 192px 0 110px;
+
+    .text-left {
+        h3 {
+            color: $eclipse;
+            margin: 0 0 22px 0;
+        }
+
+        p {
+            color: $eclipse;
+        }
+    }
+
+    .text-right {
+        p {
+            color: $eclipse;
+            margin-bottom: 14px;
+        }
+
+        .btn-secondary {
+            margin-top: 24px;
+        }
+    }
+}
+
+
+/****** WORKING GROWTH SEc *****/
+
+.working-growth-sec {
+    background-color: rgba($secondary, 0.1);
+    position: relative;
+    padding: 240px 0;
+
+    .text-left {
+        h3 {
+            color: $black;
+            margin: 0 0 28px 0;
+        }
+    }
+
+    .text-box {
+        padding: 8px 0 0 0;
+
+        h4 {
+            color: $eclipse;
+            @include Red_Hat_Display(700);
+            font-size: $font16;
+            margin-bottom: 14px;
+            line-height: 24px
+        }
+
+        p {
+            color: $eclipse;
+            margin-bottom: 14px;
+            max-width: 540px;
+            width: 100%;
+        }
+    }
+}
+
+
+/***** SAFETY STATEMENT SEC *****/
+
+.safety-statement-sec {
+    background-color: $primary;
+    padding: 250px 0 170px;
+
+    .statement-left {
+        h3 {
+            color: $white;
+            margin: 0 0 23px 0;
+        }
+
+        p {
+            color: $white;
+            margin-bottom: 14px;
+            max-width: 639px;
+            width: 100%;
+        }
+    }
+
+    .text-box {
+        p {
+            color: $white;
+            @include Red_Hat_Display(400);
+            font-size: $font16;
+            line-height: 24px;
+        }
+
+        ul {
+            padding: 14px 0 23px 23px;
+
+            li {
+                color: $white;
+                @include Red_Hat_Display(600);
+                font-size: $font16;
+                margin-bottom: 0px;
+                line-height: 24px;
+                position: relative;
+                padding-left: 18px;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 8px;
+                    background-color: $white;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+/***** POPULATED SEC *****/
+
+.populated-sec {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 530px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/***** WORK STAND SEC *****/
+
+.work-stand-sec {
+    background-color: $secondary;
+    position: relative;
+    padding: 140px 0;
+
+    h3 {
+        color: $white;
+    }
+
+    .text-box {
+        p {
+            color: $white;
+            margin-top: 23px;
+        }
+    }
+
+    .work-vacant-shape {
+        bottom: auto;
+        top: -66px;
+        transform: rotatex(180deg) rotatey(180deg);
+        width: 100%;
+
+        svg {
+            height: 66px;
+        }
+    }
+}
+
+
+/***** DEVELOPMENT SEC *****/
+
+.development-sec {
+    background-color: $dark_green;
+    padding: 235px 0 150px;
+
+    .development-left {
+        h3 {
+            color: $white;
+            margin: 0 0 30px 0;
+        }
+
+        p {
+            color: $white;
+            @include Red_Hat_Display(400);
+            font-size: $font42;
+            text-transform: uppercase;
+            line-height: 52px;
+        }
+    }
+
+    .text-box {
+        padding: 0 0 0 50px;
+
+        ul {
+            li {
+                margin-bottom: 24px;
+                position: relative;
+                padding-left: 18px;
+
+                p {
+                    color: $white;
+
+                    strong {
+                        display: block;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 8px;
+                    background-color: $white;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/***** CONTACT SEC ******/
+
+.contact-sec {
+    background-color: $primary;
+    padding: 130px 0;
+
+    .contact-left {
+        .text-box {
+            padding-bottom: 43px;
+
+            h3 {
+                color: $white;
+                margin: 0 0 21px 0;
+            }
+
+            p {
+                color: $white;
+                max-width: 510px;
+                width: 100%;
+            }
+        }
+
+        ul {
+            border-top: 1px dotted $white;
+            padding-top: 30px;
+            max-width: 302px;
+            width: 100%;
+
+            li {
+                margin: 0 0 20px 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                p {
+                    color: $white;
+                    margin: 0 0 3px 0;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+    .contact-right {
+        margin: 20px 0 0 0;
+
+        form {
+            .form-group {
+                margin-bottom: 15px;
+
+                .form-control {
+                    border: none;
+                    background-color: $white;
+                    @include Red_Hat_Display(300);
+                    font-size: $font14;
+                    text-transform: uppercase;
+                    height: 59px;
+                    color: $black;
+                    @include border_radius(5px);
+                    padding: 7px 20px;
+
+                    &::placeholder {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

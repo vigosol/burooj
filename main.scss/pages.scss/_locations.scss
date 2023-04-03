@@ -1,0 +1,103 @@
+.globalReach {
+
+    background: $primary;
+    padding: 140px 0 100px;
+
+    .text-box {
+
+        h3,
+        p {
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.locationContent {
+    padding: 200px 180px 200px 180px;
+
+    .caption {
+        h3 {
+            font-size: $font42;
+            @include Red_Hat_Display(400);
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        p {
+            @include Red_Hat_Display(400);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    }
+
+    .text-box {
+        p {
+            margin-bottom: 0.9rem;
+        }
+    }
+}
+
+
+.franchise {
+    position: relative;
+    background-color: $black;
+    background-image: url(../images/kart_bluesss.png);
+    min-height: 800px;
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $black;
+        opacity: 0.31;
+    }
+
+    .container {
+        position: relative;
+        z-index: 5;
+    }
+
+    .text-box {
+
+        h3,
+        p,
+        h4 {
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: $font42;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 52px;
+        }
+
+        p {
+            @include Red_Hat_Display(600);
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+.working-growth {
+    padding: 240px 0 70px 0;
+    background-color: $whiteSecondary;
+
+    img {
+        max-width: 100%;
+    }
+
+    .text-box {
+
+        h3,
+        p {
+            margin-bottom: .9rem;
+        }
+    }
+}

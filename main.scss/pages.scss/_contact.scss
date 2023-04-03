@@ -1,0 +1,62 @@
+.contactMap {
+    iframe {
+        height: 511px;
+        width: 100%;
+    }
+}
+
+.contact-location {
+    padding: 100px 0;
+    background: $whiteSecondary;
+
+    .titleText {
+        h3 {
+            font-size: $font24;
+            text-transform: uppercase;
+            color: $black;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        p {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    }
+
+    .text-box {
+        p {
+            margin-bottom: 0.9rem;
+        }
+    }
+}
+
+.enquireForm {
+    margin-top: 100px;
+
+    h3 {
+        font-size: $font24;
+        text-transform: uppercase;
+        color: $black;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 14px;
+    }
+
+    .form-control {
+        background-color: $white;
+        border-width: 0px 0px 0px 0px;
+        @include border_radius(8px);
+        height: 59px;
+    }
+
+    textarea {
+        &.form-control {
+
+            height: auto;
+        }
+    }
+}

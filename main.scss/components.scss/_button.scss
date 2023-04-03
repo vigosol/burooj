@@ -1,0 +1,28 @@
+.btn-secondary {
+    background-color: $orange;
+    padding: 0;
+    border: 1px solid $orange;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-transform: uppercase;
+    @include Red_Hat_Display(800);
+    @include border_radius(4px);
+    height: 54px;
+    padding: 0 29px;
+    span {
+        display: block;
+        margin-right: 10px;
+        svg {
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+    }
+}
+
+.btn-white {
+    background-color: $white;
+    color: $black;
+}
